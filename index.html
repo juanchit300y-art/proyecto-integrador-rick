@@ -17,17 +17,35 @@
         <option value="">Todos los estados</option>
         <option value="Alive">Vivo</option>
         <option value="Dead">Muerto</option>
-        <option value="Unknown">Desconocido</option>
+        <option value="unknown">Desconocido</option>
       </select>
       <select id="filtro-especie">
         <option value="">Todas las especies</option>
         <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
       </select>
+
+
     </form>
 
-    <p id="contador"></p>
+    <!-- para crear el boton de ordenar -->
+    <button type="button" id="btn-ordenar">Ordenar A-Z</button>
 
+    <!-- crea el checkbox para los primeros 10 -->
+    <label class="filtro-checkbox"> 
+      <input type="checkbox" id="check-primeros" />
+      Mostrar solo los primeros 10
+    </label>
+
+    <p id="contador"></p>
+    
+    <!-- Estadisticas -->
+    <div class="resumen-estados">
+      <span id="estadisticas"></span>
+      <span id="aviso-muertos" class="badge-aviso"></span>
+    </div>
+
+    
     <section id="resultados" class="personajes-grid"></section>
   </main>
 
