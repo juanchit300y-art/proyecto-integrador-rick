@@ -9,6 +9,7 @@
   <main class="app">
     <header class="header">
       <h1>Buscador de personajes</h1>
+      <p>Datos en vivo desde la Rick and Morty API</p>
     </header>
 
     <form class="filtros">
@@ -24,18 +25,24 @@
         <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
       </select>
-
-
+      <!-- agrego el botón para Limpiar filtros -->
+      <button type="button" id="btn-limpiar">Limpiar filtros</button>
     </form>
 
-    <!-- para crear el boton de ordenar -->
-    <button type="button" id="btn-ordenar">Ordenar A-Z</button>
 
-    <!-- crea el checkbox para los primeros 10 -->
-    <label class="filtro-checkbox"> 
-      <input type="checkbox" id="check-primeros" />
-      Mostrar solo los primeros 10
-    </label>
+    <!-- agrupo el boton para ordenar y el checkbox en un solo div -->
+    <div class="controles-secundarios">
+      <!-- para crear el boton de ordenar -->
+      <button type="button" id="btn-ordenar">Ordenar A-Z</button>
+
+      <!-- crea el checkbox para los primeros 10 -->
+      <label class="filtro-checkbox"> 
+        <input type="checkbox" id="check-primeros" />
+        Mostrar solo los primeros 10
+      </label>
+    </div>
+    
+
 
     <p id="contador"></p>
     
@@ -44,7 +51,7 @@
       <span id="estadisticas"></span>
       <span id="aviso-muertos" class="badge-aviso"></span>
     </div>
-
+    
     
     <section id="resultados" class="personajes-grid"></section>
   </main>
