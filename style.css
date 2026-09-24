@@ -54,3 +54,78 @@ body {
 .personaje-card p {
   margin: 8px 12px;
 }
+
+/* diseño para el boton ordenar A-Z */
+/* los colores los saco de la propia paleta de la pagina */
+#btn-ordenar{
+  background: #172033;
+  color: #f4f6fb;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* efecto de color cuando el boton está activo */
+#btn-ordenar.activo{
+  border-color: red;
+}
+
+/* estetica del la casilla para mostrar los primeros 10 */
+.filtro-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* estetica de las estadisticas */
+.resumen-estados{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: white;
+}
+
+/* es al fila/div donde están el boton para ordenar y el checkbox*/
+.controles-secundarios {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Botón limpiar filtros dentro */
+#btn-limpiar {
+  background: #172033;
+  color: inherit;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* estetica del aviso de si hay personajes muertos, todos vivos, o nada en el resultado */
+/* base */
+.badge-aviso {
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* estilo rojo cuando hay muertos */
+.badge-muertos {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #ef4444;
+}
+
+/* estilo verde cuando todos están vivos */
+.badge-vivos {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #10b981;
+}
